@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CHICHOGAME</title>
+
+
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0b0b0f;
+    color:white;
+}
+header{
+    background:linear-gradient(90deg,#000,#c9a227,#fff);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+nav{
+    background:#111;
+    text-align:center;
+    padding:15px;
+}
+nav button{
+    background:#c9a227;
+    color:black;
+    border:none;
+    padding:12px 18px;
+    margin:5px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+nav button:hover{
+    background:white;
+}
+.hero{
+    text-align:center;
+    padding:35px;
+}
+.seccion{
+    display:none;
+    padding:25px;
+}
+.activa{
+    display:block;
+}
+.productos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+.card{
+    background:#181818;
+    border:2px solid #c9a227;
+    border-radius:12px;
+    text-align:center;
+    padding:15px;
+}
+.card img{
+    width:100%;
+    height:170px;
+    object-fit:contain;
+    background:white;
+    border-radius:10px;
+}
+.precio{
+    color:#ffd700;
+    font-size:20px;
+    font-weight:bold;
+}
+.comprar{
+    background:#c9a227;
+    color:black;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+footer{
+    background:#111;
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>CHICHOGAME</h1>
+    <h3>Tienda de Videojuegos y Accesorios</h3>
+</header>
+
+<nav>
+    <button onclick="mostrar('inicio')">Inicio</button>
+    <button onclick="mostrar('playstation')">PlayStation</button>
+    <button onclick="mostrar('xbox')">Xbox</button>
+    <button onclick="mostrar('nintendo')">Nintendo</button>
+    <button onclick="mostrar('juegos')">Juegos</button>
+    <button onclick="mostrar('tarjetas')">Tarjetas</button>
+    <button onclick="mostrar('contacto')">Contacto</button>
+</nav>
+
+<section id="inicio" class="seccion activa">
+    <div class="hero">
+        <h2>Los mejores accesorios gamer</h2>
+        <p>Consolas, controles, audífonos, cargadores, juegos y tarjetas de regalo.</p>
+    </div>
+</section>
+
+<section id="playstation" class="seccion">
+    <h2>Accesorios PlayStation</h2>
+    <div class="productos">
+        <div class="card"><img src="https://m.media-amazon.com/images/I/61O9tWR6WDS.jpg"><h3>Control PS5 DualSense</h3><p>Control inalámbrico para PS5.</p><p class="precio">L 1,950</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://m.media-amazon.com/images/I/61CGHv6kmWL.jpg"><h3>Audífonos PS5</h3><p>Sonido envolvente gamer.</p><p class="precio">L 1,450</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://m.media-amazon.com/images/I/51uSLxW9EEL.jpg"><h3>Cámara PS5 HD</h3><p>Ideal para transmisiones.</p><p class="precio">L 1,250</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://th.bing.com/th/id/R.a9c82d65bcc57deea258c218ee224739?rik=rr%2fSGIAi4JwbYg&pid=ImgRaw&r=0"><h3>Base Cargadora PS5</h3><p>Carga dos controles a la vez.</p><p class="precio">L 900</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://gmedia.playstation.com/is/image/SIEPDC/media-remote-thumbnail-ps5-01-en-18sep20?$native--t$"><h3>Control Media PS5</h3><p>Control remoto multimedia.</p><p class="precio">L 750</p><button class="comprar">Comprar</button></div>
+    </div>
+</section>
+
+<section id="xbox" class="seccion">
+    <h2>Accesorios Xbox</h2>
+    <div class="productos">
+        <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.NxcGH2QEQ9UzQnG0roqtIAHaHa?r=0&cb=thfvnextfalcon&rs=1&pid=ImgDetMain&o=7&rm=3"><h3>Control Xbox Series X</h3><p>Control inalámbrico original.</p><p class="precio">L 1,700</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://th.bing.com/th/id/R.51a6166d7af57f2178a2a502b234e1c8?rik=755Zn81IToKY5w&pid=ImgRaw&r=0"><h3>Batería Recargable Xbox</h3><p>Kit de carga rápida.</p><p class="precio">L 850</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://i5.walmartimages.com/asr/de2f3dfd-8cf7-470a-9b17-34601b04e21d.505b0a337091897f4531e57020da29ab.jpeg"><h3>Audífonos Xbox</h3><p>Audio claro para jugar online.</p><p class="precio">L 1,350</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://www.camelotgames.net/prcpmtcvdadn/1-disco-duro-externo-portatil-seagate-game-drive-para-xbox-series-x-y-s--2tb-.jpg"><h3>Disco Duro Xbox</h3><p>Más espacio para juegos.</p><p class="precio">L 2,200</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://m.media-amazon.com/images/I/61Oq6DMLBIL._AC_UL960_QL65_.jpg"><h3>Base Vertical Xbox</h3><p>Soporte resistente para consola.</p><p class="precio">L 600</p><button class="comprar">Comprar</button></div>
+    </div>
+</section>
+
+<section id="nintendo" class="seccion">
+    <h2>Accesorios Nintendo</h2>
+    <div class="productos">
+        <div class="card"><img src="https://i5.walmartimages.com/asr/d80ea5db-2391-4713-aaa4-c02bcf734c66.901af9ccdb50b7e2f89a4aab26df9ff4.jpeg"><h3>Joy-Con Nintendo Switch</h3><p>Controles para Nintendo Switch.</p><p class="precio">L 2,100</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://acdn-us.mitiendanube.com/stores/005/561/075/products/carcasa-nintendo-swtich-1-59527cb97a1dd7b5fe17598669129261-1024-1024.jpg"><h3>Estuche Nintendo Switch</h3><p>Protección para consola y juegos.</p><p class="precio">L 650</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://m.media-amazon.com/images/I/61xhzvDIRKL.jpg"><h3>Pro Controller Switch</h3><p>Control profesional Nintendo.</p><p class="precio">L 1,850</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://cdn.gameplanet.com/wp-content/uploads/2022/08/27114122/base-de-carga-nintendo-switch-joy-con-1.jpg"><h3>Base de Carga Joy-Con</h3><p>Carga varios controles.</p><p class="precio">L 780</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://m.media-amazon.com/images/I/71VHQvy6IcL._AC_.jpg"><h3>Protector de Pantalla</h3><p>Vidrio templado para Switch.</p><p class="precio">L 250</p><button class="comprar">Comprar</button></div>
+    </div>
+</section>
+
+<section id="juegos" class="seccion">
+    <h2>Juegos por Compañía</h2>
+    <div class="productos">
+        <div class="card"><img src="https://i5.walmartimages.com/asr/64be22fb-a327-4435-a6d6-acff80824fa4.47f586eabf332e6fe659f9fc924898cc.png"><h3>Spider-Man 2 PS5</h3><p>Acción / PlayStation</p><p class="precio">L 1,600</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202212/12/00197581503899____11__1200x1200.jpg"><h3>God of War Ragnarök</h3><p>Aventura / PlayStation</p><p class="precio">L 1,500</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://www.netcost-security.fr/wp-content/uploads/2023/03/La-console-la-plus-populaire-de-lhistoire-La-PS5-etablit.png"><h3>The Last of Us Part I</h3><p>Historia / PlayStation</p><p class="precio">L 1,450</p><button class="comprar">Comprar</button></div>
+
+        <div class="card"><img src="https://www.ongame-network.it/wp-content/uploads/2021/08/Halo-infinite-6.png"><h3>Halo Infinite Xbox</h3><p>Disparos / Xbox</p><p class="precio">L 1,200</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466929le.jpg"><h3>Forza Horizon 5</h3><p>Carreras / Xbox</p><p class="precio">L 1,300</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://www.startechstore.com/wp-content/uploads/2020/03/Minecraft-Xbox-One-.jpg"><h3>Minecraft Xbox</h3><p>Construcción / Xbox</p><p class="precio">L 900</p><button class="comprar">Comprar</button></div>
+
+        <div class="card"><img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/products/games/switch/mario-kart-8-deluxe/105275-switch-mario-kart-8-deluxe-us-1200x675"><h3>Mario Kart 8 Deluxe</h3><p>Carreras / Nintendo</p><p class="precio">L 1,500</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://gamestoremd.com/wp-content/uploads/2023/04/Carcasa-si-folie-protectie-pentru-NINTENDO-Switch-OLED-Legend-of-Zelda-Tears-of.jpg"><h3>Zelda Tears of the Kingdom</h3><p>Aventura / Nintendo</p><p class="precio">L 1,650</p><button class="comprar">Comprar</button></div>
+        <div class="card"><img src="https://resources.claroshop.com/imagenes-sanborns-ii/1200/883929736027.jpg"><h3>Mortal Kombat 11</h3><p>Combate / Playstation</p><p class="precio">L 1,450</p><button class="comprar">Comprar</button></div>
+    </div>
+</section>
+
+<section id="tarjetas" class="seccion">
+    <h2>Tarjetas de Regalo</h2>
+    <div class="productos">
+ <div class="card">
+            <img src="https://gamebuybd.com/wp-content/uploads/2022/07/PlayStation-Store-Gift-Card.jpg">
+            <h3>PlayStation Gift Card $10 </h3>
+            <p>Tarjeta digital para comprar juegos en PlayStation Store.</p>
+            <p class="precio">L172</p>
+            <button class="comprar">Comprar</button>
+        </div>
+
+ <div class="card">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.22DdLeCFYT8MgdxV8IgHvQHaHa?r=0&cb=thfvnextfalcon&rs=1&pid=ImgDetMain&o=7&rm=3">
+            <h3>PlayStation Gift Card $50 </h3>
+            <p>Tarjeta digital para comprar juegos en PlayStation Store.</p>
+            <p class="precio">L884</p>
+            <button class="comprar">Comprar</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.psu.com/wp/wp-content/uploads/2021/11/100-PlayStation-Store-Card-PS-Store-PSN-For-90-Cyber-Monday.jpg">
+            <h3>PlayStation Gift Card $100 </h3>
+            <p>Tarjeta digital para comprar juegos en PlayStation Store.</p>
+            <p class="precio">L1729</p>
+            <button class="comprar">Comprar</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i5.walmartimages.com/seo/Xbox-70-Gift-Card-Digital_7a731824-fc50-4771-ab48-4902255ca9da.b41b0a5b1f6202664d9b46e7d874de79.jpeg">
+            <h3>Xbox Gift Card</h3>
+            <p>Tarjeta para juegos, pases y contenido Xbox.</p>
+            <p class="precio">L 500</p>
+            <button class="comprar">Comprar</button>
+        </div>
+
+        <div class="card">
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5784/5784104_sd.jpg">
+            <h3>Nintendo eShop Card</h3>
+            <p>Tarjeta para comprar juegos en Nintendo eShop.</p>
+            <p class="precio">L 500</p>
+            <button class="comprar">Comprar</button>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <p>Teléfono: +504 9999-9999</p>
+    <p>Facebook | Instagram | WhatsApp</p>
+</section>
+
+<footer>
+    <h2>CHICHOGAME</h2>
+    <p>© 2026 Tienda de Videojuegos</p>
+</footer>
+
+<script>
+function mostrar(id){
+    let secciones = document.querySelectorAll(".seccion");
+
+    for(let i = 0; i < secciones.length; i++){
+        secciones[i].classList.remove("activa");
+    }
+
+    document.getElementById(id).classList.add("activa");
+}
+</script>
+
+</body>
+</html>
